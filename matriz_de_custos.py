@@ -1,14 +1,14 @@
 """
 Este arquivo tem a finalidade de gerar as matrizes de custos para rodarmos as heurísticas para solução do problema de
 atribuição de salas.
-A lógica de montagem da matriz é a seguinte: temos dois subcustos, causados pelas restrições 3 e 4 do problema, conforme
-descritas no artigo. O primeiro subcusto trata da capacidade da sala em relação à quantidade de alunos na turma. Chamamos
-de cj. O segundo subcusto trata da distância da sala em relação ao ponto de referência. Chamamos de dj. cj é uma matriz
-n x m e dj é uma lista de tamanho m, onde n é a quantidade de turmas e m é a quantidade de salas. Cada valor de dj repre-
-senta a distancia da sala j até o ponto de referência. Após calcularmos cj e dj, adicionamos a cada linha de cj, a lista
-dj. Usamos também um peso para a capacidade da sala x tamanho da turma e um outro peso para a distancia entre as salas e
-o ponto de referencia. Este peso permite ao usuário definir qual dos dois subcustos deve ser o mais importante a se levar
-em consideração para a montagem da matriz de custos.
+A lógica de montagem da matriz é a seguinte: temos dois subcustos. O primeiro subcusto trata da restrição sobre a 
+capacidade da sala em relação à quantidade de alunos na turma. Chamamos de cj. O segundo subcusto trata da distância da 
+sala em relação ao ponto de referência, que deve ser a menor possível. Chamamos de dj. cj é uma matriz n x m e dj é uma 
+lista de tamanho m, onde n é a quantidade de turmas e m é a quantidade de salas. Cada valor de dj representa a distancia 
+da sala j até o ponto de referência. Após calcularmos cj e dj, adicionamos a cada linha de cj, a lista dj. Usamos também 
+um peso para a capacidade da sala x tamanho da turma e um outro peso para a distancia entre as salas e o ponto de refe-
+rência. Este peso permite ao usuário definir qual dos dois subcustos deve ser o mais importante a se levar em considera-
+ção para a montagem da matriz de custos.
 """
 from typing import List
 
