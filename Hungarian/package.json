@@ -1,0 +1,17 @@
+{
+  "name": "hungarian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Hungarian.js",
+  "dependencies": {
+    "fast-bitset": "^1.3.2",
+    "perf_hooks": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
