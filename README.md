@@ -3,21 +3,21 @@
 
 ## Execução do Algoritmo Branch and Bound
 
-No terminal já no diretório do arquivo digite
+No terminal já no diretório `branch_and_bound` digite
 
 ```bash
 python3 branch_and_bound.py
 ```
+
 ## Execução do Algoritmo Húngaro
 
-(requer instalação do Node.js) 
+Para executar o algoritmo é necessário a instalação do `Node JS`. Execute os seguintes passos:
 
-->  navegue até o diretório /Hungarian
+No diretório `hungarian/`
 
-->  npm i fast-bitset   
-
-->  npm i perf_hooks    
-
-->  npm install
-
-->  node Hungarian
+```bash
+npm i fast-bitset
+npm i perf_hooks    
+npm install
+node Hungarian
+```
